@@ -3,6 +3,7 @@ package runnables;
 import java.io.IOException;
 import java.net.Socket;
 import java.util.HashMap;
+import java.util.HashMap;
 
 import org.quickconnectfamily.json.JSONException;
 import org.quickconnectfamily.json.JSONInputStream;
@@ -36,6 +37,9 @@ public class ReceiveData implements Runnable {
 					responseView.setText(message);		
 				}
 			});
+			
+			//close socket connection
+			toServer.close();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -1,5 +1,6 @@
 package androidsandbox;
 
+import java.io.IOException;
 import java.net.Socket;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -116,20 +117,19 @@ public class MainActivity extends ActionBarActivity {
 			public void onClick(View v) {
 				final TextView responseView = (TextView)findViewById(R.id.responseView);
 		
-				//the numbers to the right of the variable represent their placement in aDataList
-				final EditText firstName = (EditText)findViewById(R.id.firstName); //0
-				final EditText middleInitial = (EditText)findViewById(R.id.middleInitial); //1
-				final EditText lastName = (EditText)findViewById(R.id.lastName); //2
-				final EditText uname = (EditText)findViewById(R.id.uname); //3
-				final EditText pword = (EditText)findViewById(R.id.pword); //4
-				final EditText email = (EditText)findViewById(R.id.email); //5
-				final EditText street = (EditText)findViewById(R.id.street); //6
-				final EditText street2 = (EditText)findViewById(R.id.street2); //7
-				final EditText city = (EditText)findViewById(R.id.city); //8
-				final EditText state = (EditText)findViewById(R.id.state); //9
-				final EditText ZIP = (EditText)findViewById(R.id.ZIP); //10
-				final EditText country = (EditText)findViewById(R.id.country); //11
-				final EditText phoneNumber = (EditText)findViewById(R.id.phoneNumber); //12
+				final EditText firstName = (EditText)findViewById(R.id.firstName); 
+				final EditText middleInitial = (EditText)findViewById(R.id.middleInitial);
+				final EditText lastName = (EditText)findViewById(R.id.lastName);
+				final EditText uname = (EditText)findViewById(R.id.uname);
+				final EditText pword = (EditText)findViewById(R.id.pword);
+				final EditText email = (EditText)findViewById(R.id.email);
+				final EditText street = (EditText)findViewById(R.id.street);
+				final EditText street2 = (EditText)findViewById(R.id.street2);
+				final EditText city = (EditText)findViewById(R.id.city); 
+				final EditText state = (EditText)findViewById(R.id.state); 
+				final EditText ZIP = (EditText)findViewById(R.id.ZIP); 
+				final EditText country = (EditText)findViewById(R.id.country); 
+				final EditText phoneNumber = (EditText)findViewById(R.id.phoneNumber); 
 		
 				//prepare the bean
 				HashMap aDataMap = new HashMap();
