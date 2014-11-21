@@ -1,7 +1,6 @@
 package androidsandbox;
 
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.HashMap;
 
 public class CommunicationBean implements Serializable {

@@ -3,7 +3,6 @@ package runnables;
 import java.io.IOException;
 import java.net.Socket;
 import java.util.HashMap;
-import java.util.HashMap;
 
 import org.quickconnectfamily.json.JSONException;
 import org.quickconnectfamily.json.JSONInputStream;
